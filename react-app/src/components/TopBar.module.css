@@ -1,0 +1,55 @@
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e70404;
+  }
+  
+  .contactInfo span, .socialIcons a {
+    margin: 0 10px;
+    padding-top: 0;
+    color: #111111;
+    align-items: center;
+  }
+  
+  .socialIcons a {
+    font-size: 1.2em;
+  }
+  
+  .socialIcons a:hover {
+      color: yellowgreen;
+  }
+  
+  .contactInfo a, span {
+    margin-left: 5px;
+    font-weight: 600;
+  }
+  
+  .contactInfo span:hover {
+     color: yellowgreen;
+     cursor: pointer;
+    }
+  
+  .contactInfo span svg {
+    margin-right: 5px;
+  }
+  
+  @media (max-width: 600px) {
+      .topBar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+    
+      .contactInfo, .socialIcons {
+        justify-content: center;
+        margin: 5px 0;
+      }
+    
+      .contactInfo span, .socialIcons a {
+        margin: 5px 15px;
+      }
+    }
+  
